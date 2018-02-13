@@ -134,6 +134,10 @@ module system_top (
   input                   tx_sync,
   output      [ 3:0]      tx_serial_data,
 
+  // power-good for FMC
+
+  output                  pg_c2m,
+
   // gpio
 
   input                   trig,
@@ -174,6 +178,8 @@ module system_top (
   wire        hps_i2c1_sda_oe;
 
   // assignments
+
+  assign pg_c2m = 1'b1;
 
   assign spi_csn_adc = spi_csn_s[2];
   assign spi_csn_dac = spi_csn_s[1];

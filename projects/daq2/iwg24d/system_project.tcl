@@ -74,6 +74,10 @@ for {set i 0} {$i < 4} {incr i} {
   set_instance_assignment -name XCVR_RECONFIG_GROUP xcvr_${i} -to tx_serial_data[${i}]
 }
 
+# power-good
+
+set_location_assignment PIN_AL15  -to pg_c2m               ; ## D01  FMCA_PG_C2M
+
 # gpio
 
 set_location_assignment PIN_R1   -to trig                  ; ## H13  FMCA_LA07_P
