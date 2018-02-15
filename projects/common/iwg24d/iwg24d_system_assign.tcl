@@ -1,6 +1,6 @@
 # clocks and resets
 
-set_location_assignment PIN_AM15 -to sys_clk
+set_location_assignment PIN_AK16 -to sys_clk
 set_location_assignment PIN_AN7  -to sys_resetn
 set_instance_assignment -name IO_STANDARD "1.8 V" -to sys_clk
 set_instance_assignment -name IO_STANDARD "1.8 V" -to sys_resetn
